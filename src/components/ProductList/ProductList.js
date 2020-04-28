@@ -14,8 +14,14 @@ const ProductListContainer = ({ products }) => {
   const productsShown = (
     searchInput.length === 0
       ? products
-      : products.filter(product => product.name.includes(searchInput)
-      || product.description.includes(searchInput)));
+      : products.filter(product => (
+        product.name
+          .toLowerCase()
+          .includes(searchInput.toLowerCase())
+      )
+      || product.description
+        .toLowerCase()
+        .includes(searchInput.toLowerCase())));
 
   const pinnedItem = products.find(product => product.isPinned === true);
 
