@@ -1,0 +1,29 @@
+.product-list-wrapper {
+  max-width: 1000px;
+
+}
+
+.product-list {
+  display: grid;
+}
+
+@media screen and (min-width: 992px) {
+  .product-list {
+    grid-template-columns: repeat(3, 325px);
+    grid-column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .product-list {
+    grid-template-columns: repeat(2, 325px);
+    grid-column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product-list {
+    grid-template-columns: repeat(1, 325px);
+    grid-column-gap: 10px;
+  }
+}

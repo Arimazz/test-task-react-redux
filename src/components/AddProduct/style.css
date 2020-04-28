@@ -1,0 +1,23 @@
+.add-product-wrapper {
+  padding: 10px;
+}
+
+.form-container {
+  width: 1000px;
+}
+
+.add-product-btn {
+  margin-top: 10px;
+}
+
+.add-product-form-group {
+  display: grid;
+  width: 1000px;
+  grid-template-columns: 500px 500px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.input-container {
+  width: 500px;
+}
